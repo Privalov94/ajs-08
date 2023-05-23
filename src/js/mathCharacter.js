@@ -20,4 +20,12 @@ export default class MathCharacter extends Character {
     }
     return (attack > 0) ? Math.floor(attack) : 0;
   }
+
+  set stoned(value) {
+    this.sstoned = value;
+  }
+
+  get stoned() {
+    return this.sstoned;
+  }
 }
